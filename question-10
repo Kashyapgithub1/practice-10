@@ -1,0 +1,29 @@
+#Q1.Count how many of each vowel (a, e, i, o, u) there are in a text string, and print the count for each vowel with a single formatted string. 
+Remember that vowels can be both lower and uppercase.
+s = input("enter a sentence: ")
+v = s.lower()
+for i in ['a','e','i','o','u']:
+  t= v.count(i)
+  print(i,t)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Q2.In the text below, count how often the word “wood” occurs (using pro-gram code, of course). 
+Capitals and lower case letters may both be used, and you have to consider that the word “wood” should be a separate word, 
+and not part of another word. Hint: If you did the exercises from this chapter, you already developed a function that “cleans” a text. 
+Combining that function with the split() function more or less solves the problem for you.
+
+text = """How much wood would a woodchuck chuck If a woodchuck could chuck wood? He  would  chuck ,  he  would ,  as  much  as  he  could ,
+And  chuck  as  much  as  a  woodchuck  would.If  a  woodchuck  could  chuck  wood."""
+
+text=("How much wood would a woodchuck chuck If a woodchuck could chuck wood? He  would  chuck , 
+he  would ,  as  much  as  he  could, And  chuck  as  much  as  a  woodchuck  would If  a  woodchuck  could  chuck  wood.")
+v= text.lower()
+s= v.split(" ")
+print(s)
+t= s.count('wood')
+u= s.count('wood.')
+v= s.count('wood?')
+w= s.count('wood!')
+print(t+u+v+w)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
